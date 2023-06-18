@@ -9,9 +9,11 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  REGISTRY_IMAGE: ghcr.io/inverse/multi-arch-docker
+  IMAGE: inverse/multi-arch-docker
+  REGISTRY_IMAGE: $REGISTRY/$IMAGE
 
 jobs:
+  build:
     runs-on: ubuntu-latest
     steps:
       -
