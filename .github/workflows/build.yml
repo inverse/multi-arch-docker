@@ -10,7 +10,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE: inverse/multi-arch-docker
-  REGISTRY_IMAGE: ${{ env.REGISTRY }}/${{ env.IMAGE }}
+  REGISTRY_IMAGE: $REGISTRY/$IMAGE
 
 jobs:
     runs-on: ubuntu-latest
